@@ -1,0 +1,43 @@
+.seventy-percent-off {
+    width: 100%;
+    max-width: 1110px;
+    background-color: $color-grey-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: $section-margin-top-small;
+    height: 326px;
+
+    @include md {
+        margin-top: $section-margin-top;
+    }
+
+    .text-holder {
+        margin-top: 55px;
+        color: $color-white;
+
+        h1 {
+            font-size: $font-size-45;
+            font-weight: $font-weight-bold;
+            text-align: center;
+        }
+
+        p {
+            font-size: $font-size-20;
+            font-weight: $font-weight-bold;
+            margin-top: 35px;
+            margin-bottom: 0px;
+        }
+    }
+
+    button {
+        margin-top: 45px;
+        background-color: $color-white;
+        margin-bottom: 4rem;
+
+        &:hover {
+            background-color: $color-theme-red;
+        }
+    }
+}

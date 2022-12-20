@@ -1,0 +1,130 @@
+.bigright {
+    max-width: 1680px;
+    margin-top: $section-margin-top-small;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    @include md {
+        margin-top: $section-margin-top;
+    }
+
+    @include custom-max {
+        width: 1680px;
+        flex-direction: row-reverse;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .big {
+        min-width: 90%;
+        max-width: 1110px;
+        height: 180px;
+        background-color: $color-grey-5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include md {
+            height: 332px;
+        }
+
+        @include xxl {
+            height: 664px;
+        }
+
+        @include custom-max {
+            width: 825px;
+            min-width: 825px;
+            height: 664px;
+        }
+
+        .title {
+            color: $color-white;
+            font-size: $font-size-45;
+            font-weight: $font-weight-bold;
+        }
+
+        button {
+            margin-top: 2rem;
+            background-color: $color-white;
+
+            &:hover {
+                background-color: $color-theme-red;
+            }
+        }
+    }
+
+    .product-grid {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @include xl {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        @include custom-max {
+            gap: 30px;
+            width: 825px;
+            margin-left: 285px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            padding-top: 10px;
+
+            #box-1 {
+                grid-column: 1 / 2;
+                grid-row: 1 / 1;
+            }
+
+            #box-2 {
+                grid-column: 2 / 3;
+                grid-row: 1 / 1;
+            }
+
+            #box-3 {
+                grid-column: 1 / 2;
+                grid-row: 2 / 2;
+            }
+
+            #box-4 {
+                grid-column: 2 / 3;
+                grid-row: 2 / 2;
+            }
+        }
+
+        .card {
+            text-align: center;
+
+            @include xl {
+                text-align: left;
+            }
+
+            .price-holder {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include xl {
+                    justify-content: left;
+                }
+
+                .salePrice:not(:empty) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}

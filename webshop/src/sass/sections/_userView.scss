@@ -1,0 +1,43 @@
+.userView {
+    padding-top: 10rem;
+    min-height: 85vh;
+    text-align: center;
+
+    .toggleLoginBtn {
+        max-height: 4rem;
+        width: 16rem;
+        margin-bottom: 2rem;
+        background-color: $color-theme-red;
+
+        &:hover {
+            background-color: $color-text-dark-header;
+            color: white;
+        }
+    }
+
+    .logoutBtn {
+        background-color: $color-theme-red;
+        margin-bottom: 2rem;
+
+        &:hover {
+            background-color: $color-text-dark-header;
+            color: white;
+        }
+    }
+
+    .adminLink {
+        display: inline-block;
+        width: auto;
+        padding: 0 1rem;
+        text-align: center;
+        padding-top: 0.7rem;
+        background-color: $color-theme-red;
+        margin-bottom: 2rem;
+
+        &:hover {
+            background-color: $color-text-dark-header;
+        }
+    }
+
+
+}

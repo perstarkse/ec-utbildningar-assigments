@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import "./core/variables";
+@import "./core/root";
+@import "./core/breakpoints";
+
+@import "./reusable-components/navbar";
+@import "./reusable-components/buttons";
+@import "./reusable-components/card";
+@import "./reusable-components/icons";
+@import "./reusable-components/footer";
+@import "./reusable-components/top-ad-bar";
+@import "./reusable-components/top-nav";
+
+@import "./sections/start-banner";
+@import "./sections/clearance-new-arrivals";
+@import "./sections/featured-product";
+@import "./sections/focused-products";
+@import "./sections/speciality";
+@import "./sections/bigleft";
+@import "./sections/bigright";
+@import "./sections/seventy-percent-off";
+@import "./sections/product-overview-grid";
+@import "./sections/site-disclaimer-icons-four";
+@import "./sections/product-details";
+@import "./sections/related-products";
+@import "./sections/map";
+@import "./sections/contact-us-form";
+@import "./sections/not-found-view";
+@import "./reusable-components/productGrid";
+@import "./sections/shoppingCart";
+@import "./sections/adminView";
+@import "./sections/userView";

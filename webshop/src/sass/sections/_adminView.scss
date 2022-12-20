@@ -1,0 +1,165 @@
+.adminCreateItem {
+    padding-top: 100px;
+
+    button {
+        width: 100%;
+        height: 46px;
+        border: none;
+        background-color: $color-theme-red;
+        font-weight: $font-weight-semiBold;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: $color-text-dark-header;
+            color: white;
+        }
+    }
+
+    .createForm {
+        text-align: center;
+
+        input {
+            height: 2rem;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+
+        label {}
+    }
+}
+
+
+.adminArticleList {
+    .articleList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+
+        @media (min-width:650px) {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            margin-top: 0.5rem;
+            width: 250px;
+
+            @media (min-width:650px) {
+                width: 50px;
+            }
+
+            @media (min-width:900px) {
+                width: 130px;
+            }
+        }
+
+        ul {
+            padding-left: 0 !important;
+            text-align: center;
+            width: 350px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+            @media (min-width:650px) {
+                width: 90px;
+            }
+
+            @media (min-width:900px) {
+                width: 125px;
+            }
+
+            @media (min-width:1300px) {
+                width: 170px;
+            }
+        }
+    }
+
+    .buttonGroup {
+        display: flex;
+        justify-content: center;
+
+        button {
+            background: none;
+            border: none;
+        }
+    }
+
+    .editArticle {
+        form {
+            display: grid;
+            place-content: center;
+            border: none;
+            gap: 2px;
+
+            input {
+                border: 1px solid $color-text-dark-header;
+            }
+
+            button {
+                width: 100%;
+                height: 32px;
+                border: none;
+                background-color: $color-theme-red;
+                font-weight: $font-weight-semiBold;
+
+                &:hover {
+                    background-color: $color-text-dark-header;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
+
+.listHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+
+    @media (min-width:650px) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        margin-top: 0.5rem;
+        width: 250px;
+
+        @media (min-width:650px) {
+            width: 50px;
+        }
+
+        @media (min-width:900px) {
+            width: 130px;
+        }
+    }
+
+    ul {
+        padding-left: 0 !important;
+        text-align: center;
+        width: 350px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        @media (min-width:650px) {
+            width: 100px;
+        }
+
+        @media (min-width:900px) {
+            width: 150px;
+        }
+
+        @media (min-width:1300px) {
+            width: 200px;
+        }
+    }
+}

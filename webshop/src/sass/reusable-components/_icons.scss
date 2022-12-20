@@ -1,0 +1,24 @@
+    .icons {
+        display: flex;
+
+        .circle {
+            height: 36px;
+            width: 36px;
+            background-color: $color-white;
+            border-radius: 50%;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+
+            i {
+                position: absolute;
+                top: 11px;
+                left: 11px;
+
+            }
+
+            &:hover {
+                background-color: $color-text-dark-header;
+                color: $color-white;
+            }
+        }
+    }

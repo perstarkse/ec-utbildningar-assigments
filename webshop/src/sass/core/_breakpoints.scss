@@ -1,0 +1,59 @@
+@mixin sm {
+    @media (min-width: #{$breakpoint-sm}) {
+        @content
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$breakpoint-md}) {
+        @content
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$breakpoint-lg}) {
+        @content
+    }
+}
+
+@mixin full {
+    @media (min-width: #{$breakpoint-full}) {
+        @content
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$breakpoint-xl}) {
+        @content
+    }
+}
+
+@mixin xxl {
+    @media (min-width: #{$breakpoint-xxl}) {
+        @content
+    }
+}
+
+@mixin custom-max {
+    @media (min-width:#{$breakpoint-custom-max}) {
+        @content
+    }
+}
+
+@mixin min1920p {
+    @media (min-width:#{$breakpoint-min-1920p}) {
+        @content
+    }
+}
+
+@mixin max1920p {
+    @media (max-width:#{$breakpoint-max-1920p}) {
+        @content
+    }
+}
+
+@mixin md-cards {
+    @media (min-width:#{$breakpoint-md-cards}) {
+        @content
+    }
+}

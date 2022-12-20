@@ -1,0 +1,15 @@
+html,
+body {
+    font-family: $font-poppins  !important;
+    font-weight: $font-weight-regular  !important;
+
+    a {
+        text-decoration-line: none;
+        color: $color-text-dark-small;
+
+        &:hover {
+            color: $color-theme-red;
+        }
+    }
+
+}

@@ -1,0 +1,395 @@
+.product-detailed {
+    min-width: none;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+
+    @include sm {
+        margin-top: 32px;
+    }
+
+    @include md {
+        margin-top: $section-margin-top;
+    }
+
+    @include lg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .top-part {
+        .card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 1100px;
+
+            @include lg {
+                flex-direction: row;
+                height: 606px;
+                justify-content: left;
+                align-items: left;
+            }
+
+            .product-images {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .big-image {
+                    min-width: 340px;
+                    min-height: 354px;
+                    background-color: $color-grey-product-details-placeholder;
+                    margin-top: $section-margin-top-small;
+
+                    img {
+                        min-width: 340px;
+                        min-height: 354px;
+                        margin-top: $section-margin-top-small;
+
+                        @include sm {
+                            min-width: 540px;
+                            min-height: 444px;
+                        }
+
+                        @include lg {
+                            margin-top: 0;
+                        }
+                    }
+
+                    @include sm {
+                        min-width: 540px;
+                        min-height: 444px;
+                    }
+
+                    @include lg {
+                        margin-top: 0;
+                    }
+                }
+
+                .small-images {
+                    margin-top: 30px;
+                    display: flex;
+                    gap: 20px;
+
+                    @include sm {
+                        gap: 30px;
+                    }
+
+                    .image-123 {
+
+                        img {
+                            min-width: 104px;
+                            min-height: 85px;
+                            max-width: 105px;
+                            max-height: 85px;
+
+                            @include sm {
+                                min-width: 160px;
+                                max-width: 160px;
+                                min-height: 132px;
+                                max-height: 132px;
+                            }
+                        }
+
+                        min-width: 104px;
+                        min-height: 85px;
+
+                        @include sm {
+                            min-width: 160px;
+                            min-height: 132px;
+                        }
+                    }
+                }
+            }
+
+            .text-holder {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0;
+                line-height: 26px;
+                max-width: 540px;
+                color: $color-text-dark-header;
+                margin-top: 2rem;
+
+                @include lg {
+                    display: block;
+                    margin-top: -14rem !important;
+                    margin-left: 30px;
+                }
+
+                .title {
+                    font-size: $font-size-24;
+                }
+
+                .sku-brand-holder {
+                    display: flex;
+                    gap: 1rem;
+                    margin-top: $product-details-text-holder-margin;
+                    margin-bottom: $product-details-text-holder-margin;
+                    font-size: $font-size-13;
+                    color: $color-grey-4 !important;
+                }
+
+                .price {
+                    margin-top: $product-details-text-holder-margin;
+                    font-size: $font-size-18;
+                }
+
+                .description-text {
+                    margin-top: $product-details-text-holder-margin;
+                    line-height: 26px;
+                    padding-right: 1rem;
+                    color: $color-grey-4 !important;
+
+                    @include lg {
+                        max-width: 540px;
+                    }
+                }
+
+                .product-detail-form {
+                    .row-descriptor {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        margin-top: calc($product-details-text-holder-margin * 2);
+
+                        .descriptor {
+                            margin-right: 2rem;
+                        }
+
+                        .size-inputs {
+                            display: flex;
+
+                            .square-radio {
+                                position: relative;
+
+                                input {
+                                    width: 40px;
+                                    height: 40px;
+                                    box-sizing: border-box;
+                                    appearance: none;
+                                    outline: 1px solid black;
+
+                                    margin-left: 1rem;
+                                    cursor: pointer;
+
+                                    &:checked {
+                                        background-color: rgba($color: $color-theme-red, $alpha: 0.8);
+                                    }
+
+                                    &:hover {
+                                        background-color: rgba($color: $color-theme-red, $alpha: 0.5);
+                                    }
+                                }
+
+                                label {
+                                    position: absolute;
+                                    left: 28px;
+                                    top: 8px;
+
+                                }
+                            }
+                        }
+
+                        .color-input {
+                            margin-left: 0.1rem;
+                            height: 40px;
+                            width: 208px;
+                            border: 1px solid $color-text-dark-header;
+                            background-color: $color-white;
+                            color: $color-grey-4;
+                        }
+
+                        #last-div {
+                            margin-top: -5.4rem;
+
+                            @include lg {
+                                margin-top: 0;
+                            }
+                        }
+
+                        .qty {
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 1rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            @include lg {
+                                flex-direction: row;
+                            }
+
+                            .amount-button {
+                                display: flex;
+                                align-items: center;
+
+                                .less {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 1px solid $color-text-dark-header;
+                                    border-right: none;
+                                    height: 60px;
+                                    width: 35px;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        background-color: rgba($color: $color-theme-red, $alpha: 0.8);
+                                    }
+                                }
+
+                                .number {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: 1px solid $color-text-dark-header;
+                                    height: 60px;
+                                    width: 58px;
+                                }
+
+                                .more {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: 1px solid $color-text-dark-header;
+                                    border-left: none;
+                                    height: 60px;
+                                    width: 35px;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        background-color: rgba($color: $color-theme-red, $alpha: 0.8);
+                                    }
+                                }
+                            }
+
+                            button {
+                                margin-top: $product-details-text-holder-margin;
+                                margin-left: 0rem;
+                                background-color: $color-theme-red;
+                                color: $color-white;
+                                font-weight: $font-weight-semiBold;
+
+                                @include lg {
+                                    margin-top: 0;
+                                    margin-left: 2rem;
+                                }
+
+                                &:hover {
+                                    background-color: $color-text-dark-header;
+                                }
+                            }
+                        }
+
+                        .share-links {
+                            display: flex;
+                            gap: 15px;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin-left: -0.5rem;
+
+                            .circle {
+                                height: 36px;
+                                width: 36px;
+                                background-color: $color-grey-circles-product-details;
+                                border-radius: 50%;
+                                position: relative;
+                                transition: 0.3s ease-in-out;
+
+                                i {
+                                    position: absolute;
+                                    top: 11px;
+                                    left: 11px;
+                                }
+
+                                &:hover {
+                                    color: $color-white;
+                                    background-color: $color-text-dark-header;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-part {
+        margin-top: 0;
+
+        @include sm {
+            margin-top: $section-margin-top;
+        }
+
+        .nav-links {
+            color: $color-grey-4;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid $color-grey-product-details-nav-links-bottom;
+            width: 100%;
+
+            @include full {
+                width: 552px;
+                justify-content: left;
+            }
+
+            a {
+                padding-bottom: 0.8rem;
+                position: relative;
+                margin-right: 1rem;
+
+                @include sm {
+                    margin-right: 4.75rem;
+                }
+
+                &:active {
+                    color: $color-theme-red;
+                }
+
+                &:hover {
+                    color: $color-theme-red;
+                    border-bottom: 1px solid $color-theme-red;
+                }
+
+                &:last-child {
+                    text-align: right;
+                    padding-right: 0;
+
+                    @include sm {
+                        margin-right: 0rem;
+                    }
+                }
+            }
+        }
+
+        .text-holder {
+            text-align: center;
+            margin-top: 1rem;
+            color: $color-grey-4;
+
+            @include full {
+                text-align: left;
+            }
+
+            .top {
+                margin-top: 0.5rem
+            }
+
+            .bullet-points {
+                margin-top: 1rem
+            }
+
+            .bottom {
+                margin-top: 1rem
+            }
+        }
+    }
+}

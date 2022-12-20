@@ -1,0 +1,15 @@
+.top-nav {
+    max-width: 1110px;
+    margin-top: $section-margin-top-small;
+
+    .holder {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .base-page {
+        color: $color-theme-red;
+    }
+}

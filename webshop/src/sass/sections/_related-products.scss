@@ -1,0 +1,101 @@
+.related-products {
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: $section-margin-top-small;
+    justify-content: center;
+    margin-bottom: $section-margin-top-small;
+
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include md {
+        margin-top: $section-margin-top;
+        margin-bottom: $section-margin-top;
+    }
+
+    @include full {
+        justify-content: left;
+    }
+
+    .title {
+        h1 {
+            font-size: $font-size-20;
+            font-weight: $font-weight-bold;
+            margin-bottom: 1.5rem;
+            text-align: center;
+
+            @include full {
+                text-align: left;
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        gap: 1rem;
+
+        .circle {
+            height: 20px;
+            width: 20px;
+            background-color: $color-white;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0px 0px 15px rgba($color: $color-grey-border, $alpha: 0.3);
+
+            i {
+                position: absolute;
+                top: 4px;
+                left: 5px;
+                font-size: 0.8em;
+            }
+
+            &:hover {
+                background-color: $color-theme-red;
+            }
+        }
+    }
+
+    .horizontal-card-view {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-height: 340px;
+        overflow: hidden;
+
+        @include full {
+            justify-content: left;
+        }
+
+        .card {
+
+            .text-holder {
+                margin-top: 0.5rem;
+                gap: 0.3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                line-height: 21px;
+
+                .price-holder {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .oldprice {
+                        text-decoration: line-through;
+                        color: $color-grey-4;
+                    }
+                }
+            }
+        }
+    }
+}

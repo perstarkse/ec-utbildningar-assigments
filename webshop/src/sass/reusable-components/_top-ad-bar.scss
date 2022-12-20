@@ -1,0 +1,22 @@
+.top-ad-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    max-width: 1110px;
+    box-shadow: 0px 5px 15px rgba($color: $color-grey-border, $alpha: 0.2);
+    margin-top: 7rem;
+
+    .text-holder {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: $color-theme-red;
+            margin-top: .75rem;
+            margin-bottom: .75rem;
+        }
+    }
+}

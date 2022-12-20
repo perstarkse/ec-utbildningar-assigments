@@ -1,0 +1,120 @@
+.contact-us-form {
+    margin-top: $section-margin-top-small;
+    width: 90%;
+    max-width: 1110px;
+    margin-bottom: $section-margin-top;
+
+    @include md {
+        margin-top: $section-margin-top;
+    }
+
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .title {
+        text-align: center;
+        font-size: $font-size-18;
+        font-weight: $font-weight-bold;
+
+        @include lg {
+            text-align: left;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .form-group {
+            position: relative;
+
+            input {
+                width: 100%;
+                height: 50px;
+                border: 1px solid rgba($color: #707070, $alpha: 0.4);
+                text-align: center;
+
+                @include md {
+                    text-align: left;
+                }
+
+                &:focus-within {
+                    outline: none !important;
+                    border: 1px solid rgba($color: #707070, $alpha: 1) !important;
+                }
+            }
+
+            input.error {
+                color: $color-theme-red;
+                border: 1px solid rgba($color: $color-theme-red, $alpha: 1);
+
+                &:focus-within {
+                    outline: none !important;
+                    border: 1px solid rgba($color: $color-theme-red, $alpha: 1) !important;
+                }
+            }
+
+            .errorMessage {
+                margin-top: 5px;
+                color: rgba($color: $color-theme-red, $alpha: 1);
+                font-size: 0.8em;
+            }
+        }
+
+        .top {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+
+            input {
+                @include xl {
+                    width: 538px;
+                    padding-left: 5px;
+                }
+            }
+
+            @include xl {
+                justify-content: left;
+                flex-direction: row;
+            }
+        }
+
+        .bottom {
+            margin-top: 2rem;
+
+            input {
+                padding-top: 15px;
+                padding-bottom: 125px;
+                float: left;
+
+                @include xl {
+                    padding-left: 5px;
+                    width: 1110px;
+                }
+            }
+        }
+
+        button {
+            margin-top: 2rem;
+            height: 50px;
+            width: 207px;
+            color: $color-white;
+            background-color: $color-theme-red;
+            margin-left: 50%;
+            transform: translateX(-50%);
+
+            @include lg {
+                margin-left: 0;
+                transform: none;
+            }
+
+            &:hover {
+                background-color: $color-text-dark-header;
+            }
+        }
+    }
+}

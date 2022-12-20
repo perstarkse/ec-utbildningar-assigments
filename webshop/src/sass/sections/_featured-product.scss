@@ -1,0 +1,56 @@
+.featured-product {
+    max-width: 1110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: $section-margin-top-small;
+    flex-direction: column;
+
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include md {
+        margin-top: $section-margin-top;
+    }
+
+    .title {
+        h2 {
+            font-size: $font-size-20;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    .product-grid {
+        margin-top: 1.875rem;
+        display: grid;
+        gap: 1.875rem;
+        row-gap: 0rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @include md-cards {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @include full {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .card {
+            .price-holder {
+                justify-content: center;
+            }
+        }
+    }
+
+}

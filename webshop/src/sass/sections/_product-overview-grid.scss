@@ -1,0 +1,185 @@
+.product-overview-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $section-margin-top-small;
+    flex-direction: column;
+    gap: 0px;
+
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include md {
+        margin-top: $section-margin-top;
+        flex-direction: row
+    }
+
+    @include full {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 1110px;
+        min-width: 1110px;
+        gap: 30px;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        row-gap: 35px;
+
+        @include md {
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @include full {
+            row-gap: 30px;
+        }
+
+    }
+
+    .title {
+        margin-bottom: 2rem;
+        font-size: $font-size-20;
+        font-weight: $font-weight-bold;
+        margin-left: 3rem;
+        text-align: center;
+        margin-top: $section-margin-top-small;
+
+
+        @include md {
+            margin-top: 0;
+        }
+
+        @include full {
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 220px;
+        margin-left: 0rem;
+
+        @include md {
+            display: flex;
+            flex-direction: column;
+            width: 160px;
+            height: 202px;
+            margin-left: 3rem;
+        }
+
+
+        @include full {
+            margin-left: 0;
+            flex-direction: row;
+            width: 290px;
+            height: 132px;
+        }
+
+        .product-image {
+            height: 220px;
+            width: 100%;
+
+            img {
+                height: 220px;
+                width: 100%;
+            }
+
+            @include md {
+                height: 132px;
+                width: 160px;
+
+                img {
+                    height: 132px;
+                    width: 160px;
+                }
+            }
+
+
+            .menu {
+                display: none;
+            }
+
+            .quick-view {
+                display: flex;
+
+                @include lg {
+                    display: none;
+                }
+            }
+
+            &:hover .quick-view {
+                display: flex;
+            }
+
+        }
+
+        .text-holder {
+            margin-left: 1rem;
+            width: 100%;
+            height: 175px;
+            line-height: 21px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            @include md {
+                margin-left: 1rem;
+                width: 120px;
+                height: 175px;
+                align-items: center;
+            }
+
+            @include full {
+                display: block;
+            }
+
+            .title {
+                font-size: $font-size-16;
+                font-weight: $font-weight-semiBold;
+                margin-left: 0;
+                margin-top: -0.2rem;
+
+                @include md {
+                    margin-top: 0;
+                }
+            }
+
+            .rating {
+                margin-top: -2rem;
+
+                @include full {
+                    margin-top: 0.5rem;
+                }
+            }
+
+            .price-holder {
+                margin-top: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include full {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: left;
+                }
+
+                .salePrice:not(:empty) {
+                    margin-right: 1rem;
+                }
+
+            }
+        }
+    }
+}
