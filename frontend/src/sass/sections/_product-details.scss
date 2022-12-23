@@ -47,13 +47,13 @@
                     margin-top: $section-margin-top-small;
 
                     img {
-                        min-width: 340px;
-                        min-height: 354px;
+                        width: 340px;
+                        height: 354px;
                         margin-top: $section-margin-top-small;
 
                         @include sm {
-                            min-width: 540px;
-                            min-height: 444px;
+                            width: 540px;
+                            height: 444px;
                         }
 
                         @include lg {

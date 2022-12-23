@@ -39,8 +39,6 @@ export const UserProvider: React.FC<IUserProvider> = ({ children }) => {
 
     const getUser = async () => {
         try {
-            // const decoded = jwt_decode<IacceessToken>(localStorage.getItem('accessToken')!)
-
             const result = await fetch(url + `user/`, {
                 method: 'get',
                 headers: {

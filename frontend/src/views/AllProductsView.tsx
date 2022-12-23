@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import NavBar from "../components/NavBar";
 import TopAdBar from "../components/TopAdBar";
 import TopNav from "../components/TopNav";

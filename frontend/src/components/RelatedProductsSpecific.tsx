@@ -1,7 +1,5 @@
-import { ProductGridProps } from '../interfaces/Interfaces'
 import CategoryArticles from './components/CategoryArticles';
-import ProductCard from './components/ProductCard'
-import TagArticles from './components/TagArticles'
+
 export interface RelatedProductProps {
     title: string;
     category: string,

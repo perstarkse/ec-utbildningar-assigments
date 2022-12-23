@@ -31,7 +31,7 @@ const NavBar = () => {
 
     useEffect(() => {
         if (loggedIn()) { getUser(); }
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <header className="header-bar container">

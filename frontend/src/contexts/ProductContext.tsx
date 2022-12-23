@@ -94,7 +94,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     //                 {_id}
     //     } `
     // const [addProduct] = useMutation(postQuery)
-
+    
 
     // LEGACY CODE
 
@@ -129,7 +129,6 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     //         setTagProducts(getTaggedProducts.data.articles);
     //     }
     // }
-
     // const getShirtProducts = async (tag: string, take = 4) => {
     //     const res = await fetch(localUrl + `cat=${tag}/${take}`)
     //     setShirtProducts(await res.json())
@@ -152,7 +151,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({ children }) =>
     //     const res = await fetch(localUrl + `/topReacted/${take}`)
     //     setTopReactedProducts(await res.json())
     // }
-
+ 
     const createItem = async (e: React.FormEvent) => {
         e.preventDefault()
 

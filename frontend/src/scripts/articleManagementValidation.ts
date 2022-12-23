@@ -1,10 +1,6 @@
-// import { useState } from "react"
 import { IArticle } from "../interfaces/Interfaces"
 
-// interface Ierrors {
-//     articleNumberError?: string;
-//     ratingError?: string;
-// }
+// SIMPLE ARTICLE VALIDATION CLIENTSIDE
 
 export const ArticleValidation = (articleSuggestion: IArticle) => {
     // const baseErrors = { articleNumberError: "", ratingError: "" }

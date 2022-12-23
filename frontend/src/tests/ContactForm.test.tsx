@@ -4,8 +4,10 @@ import '@testing-library/jest-dom'
 import ContactUsForm from '../components/ContactUsForm';
 import userEvent from '@testing-library/user-event';
 
-describe('ContactUsForm', () => {
 
+// TEST MIGHT FAIL DUE TO FORM API BEING DOWN. 
+
+describe('ContactUsForm', () => {
     it('will display error if user tries to submit without entering correct input', () => {
         render(<ContactUsForm />);
         // find submitbutton and press it

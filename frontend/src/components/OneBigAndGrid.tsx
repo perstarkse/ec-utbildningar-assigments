@@ -1,7 +1,4 @@
-import { IArticle } from '../interfaces/Interfaces';
 import CategoryArticles from './components/CategoryArticles';
-import ProductCard from './components/ProductCard'
-import TagArticles from './components/TagArticles';
 import ThemeButton from './components/ThemeButton'
 export interface OneBigAndGridProps {
     direction: string;
