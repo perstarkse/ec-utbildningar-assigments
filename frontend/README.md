@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+## Info:
+
+To edit articles, log in with admin access. Only way to create a new admin is via direct interface with the database. Afterwards, you can create a new admin via expressjs api.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
